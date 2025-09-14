@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=2400px, initial-scale=1.0">
+  <title>Complaint Page</title>
+  <style>
+    body {
+      background: #f9f9f9;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007bff;
+      padding: 10px 20px;
+      color: white;
+      position: relative;
+    }
+
+    /* Logo */
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Nav links */
+    .navbar .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Profile menu */
+    .profile-container {
+      position: relative;
+      margin-left: 30px;
+    }
+
+    .profile-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #007bff;
+      font-weight: bold;
+      font-size: 16px;
+      user-select: none;
+    }
+
+    .profile-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 45px;
+      background-color: white;
+      color: #333;
+      min-width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+    }
+
+    .profile-dropdown ul {
+      list-style: none;
+      padding: 10px;
+    }
+
+    .profile-dropdown ul li {
+      padding: 8px 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .profile-dropdown ul li:last-child {
+      border-bottom: none;
+    }
+
+    .profile-dropdown ul li span {
+      font-weight: bold;
+    }
+
+    /* Show dropdown on active class */
+    .profile-container.active .profile-dropdown {
+      display: block;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .table-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      background: white;
+      table-layout: auto;
+      width: auto;
+      max-width: 90%;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    th {
+      background: #f0f0f0;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">LAUNDRIFY</div>
+
+    <div class="nav-links">
+      <a href="home.html">HOME</a>
+      <a href="my_laundry.html">MY LAUNDRY</a>
+      <a href="contact us.html">CONTACT US</a>
+      <a href="laundry_complaint.html">COMPLAINT</a>
+      <a href="login.html">LOGIN</a>
+
+      <div class="profile-container" id="profileMenu">
+        <div class="profile-circle">A</div>
+        <div class="profile-dropdown">
+          <ul>
+            <li><span>Name:</span>Prashant Sinha</li>
+            <li><span>Reg No:</span> 250012</li>
+            <li><span>Room No:</span> 215F</li>
+            <li><span>Flank:</span> F-Flank</li>
+            <li><span>Contact Details:</span> 8459705541</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <h2>Complaints / Contact Authority</h2>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Authority Name</th>
+          <th>Position</th>
+          <th>Contact / Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. Rajesh Sharma</td>
+          <td>Dean of Student Affairs</td>
+          <td>rajesh.sharma@aitpune.edu.in</td>
+        </tr>
+        <tr>
+          <td>Sandip Mahadik</td>
+          <td>Hostel Warden</td>
+          <td>meera.nair@aitpune.edu.in</td>
+        </tr>
+        <tr>
+          <td>Mr. Amit Verma</td>
+          <td>Laundry Incharge</td>
+          <td>amit.verma@aitpune.edu.in</td>
+        </tr>
+        <tr>
+          <td>K. Tallikoti</td>
+          <td>Assistant Warden</td>
+          <td>Kart.tallikoti@aitpune.edu.in</td>
+        </tr>
+        <tr>
+          <td>Nabjit Chauhan</td>
+          <td>Student Council Rep.</td>
+          <td>Nab.chu@aitpune.edu.in</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6MeGwMkAelirRWMuiovvA7ugv1VtYBMzuOcdULZgtmu5BmA/viewform?embedded=true"
+    target="_blank">complain here</a>
+  <a href="my_laundry.html" class="back-btn">⬅ Back to Main Page</a>
+
+</body>
+
+</html>
+
+</body>
+
+
+
+</html>

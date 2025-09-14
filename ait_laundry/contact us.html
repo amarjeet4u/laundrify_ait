@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="auto.css">
+    <style>
+      body {
+      background: #f9f9f9;
+    }
+    .form-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+        /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007bff;
+      padding: 10px 20px;
+      color: white;
+      position: relative;
+    }
+
+    /* Logo */
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Nav links */
+    .navbar .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Profile menu */
+    .profile-container {
+      position: relative;
+      margin-left: 30px;
+    }
+
+    .profile-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #007bff;
+      font-weight: bold;
+      font-size: 16px;
+      user-select: none;
+    }
+
+    .profile-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 45px;
+      background-color: white;
+      color: #333;
+      min-width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+    }
+
+    .profile-dropdown ul {
+      list-style: none;
+      padding: 10px;
+    }
+
+    .profile-dropdown ul li {
+      padding: 8px 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .profile-dropdown ul li:last-child {
+      border-bottom: none;
+    }
+
+    .profile-dropdown ul li span {
+      font-weight: bold;
+    }
+
+    /* Show dropdown on active class */
+    .profile-container.active .profile-dropdown {
+      display: block;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .table-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      background: white;
+      table-layout: auto;
+      width: auto;
+      max-width: 90%;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    th {
+      background: #f0f0f0;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<nav class="navbar">
+        <div class="logo">LAUNDRIFY</div>
+
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="my_laundry.html">MY LAUNDRY</a>
+            <a href="contact us.html">CONTACT US</a>
+            <a href="laundry_complaint.html">COMPLAINT</a>
+            <a href="login.html">LOGIN</a>
+
+            <div class="profile-container" id="profileMenu">
+                <div class="profile-circle">A</div>
+                <div class="profile-dropdown">
+                    <ul>
+                        <li><span>Name:</span>Prashant Sinha</li>
+                        <li><span>Reg No:</span> 250012</li>
+                        <li><span>Room No:</span> 215F</li>
+                        <li><span>Flank:</span> F-Flank</li>
+                        <li><span>Contact Details:</span> 8459705541</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+    </nav>
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/001/428/620/non_2x/laundry-elements-and-clothes-banner-vector.jpg );">
+    <h2 style="position: absolute;top: 8%;left: 5%;font-size: xx-large;">Contact-Us: </h2>
+    <br>
+    <a href="https://www.instagram.com/aitpune_official/?hl=en" target="_blank">
+        <img src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" alt="" style="height: 1.1cm;position: absolute ;top: 17%;left: 5%;">
+    </a>
+<h2 style="font-family: cursive;position: absolute;top: 15%;left: 8%;">Insta Handle</h2>
+
+<h2 style="font-family: cursive;position: absolute;top: 15%;left: 21%;">Mail</h2>
+<a  href="https://www.w3schools.com/howto/howto_css_login_form.asp" target="_blank">
+    <img src="https://icons.veryicon.com/png/o/business/oa-office/mail-227.png" alt="" style="height: 40px;position:absolute;top: 17%;left: 18.5%;">
+</a>
+
+
+
+
+<h2 style="font-family: cursive;position: absolute;top: 15%;left: 29%;" >WhatsApp</h2>
+<a href="https://www.whatsapp.com/" target="_blank">
+    <img src="https://www.pngplay.com/wp-content/uploads/8/Whatsapp-Logo-PNG-Clipart-Background.png"
+     alt="" style="height: 30px;position: absolute;top: 17.5%;left: 27%;">
+</a>
+<a style="text-decoration: none;font-family: cursive;text-decoration: wavy;font-size:200%;position: absolute;top: 10%;left: 40%;"  target="_blank"    href="https://classictenders.com/view-search-tenders/tender-for-running-of-laundry-services-at-ait-campus/40655461/Live?srsltid=AfmBOopVg2NMQbhyd_BLoHK3So47eYjS6ayHCNMhQroK54u5a-zRiOx_">
+    <img src="https://tendermitra.org/static/assets/img/tendermitra-home.png" alt="" style="height: 5cm;">
+</a>
+<img src="https://cdn2.iconfinder.com/data/icons/online-marketing-glyph/48/Sed-46-512.png" alt="" style="height: 70px;position: absolute;left: 45%;top: 23%;">
+<b><p style="position: absolute;left:70%;top: 7%;font-size: 30px;">Mandatory Fee: An annual laundry fee is included in the hostel charges.
+Contractor Liable for Damage: The laundry service provider is solely responsible for any damage or loss of clothes.
+Reimbursement for Loss: The contractor must reimburse students for lost or damaged items.
+No Refund for Absences: Fees are not refunded during periods of leave.
+Service Included: The fee covers washing, drying, starching, and ironing service</p></b>
+<h2 style=" position: absolute;top: 27%;left: 5%;"> Dighi Hills,Alandi Road,Pune-411015
+7249250184/ 7249250185,
+ait@aitpune.edu.in
+</h2>
+<b><h3 style="position: absolute;left: 15%;top: 45%; text-decoration: tomato;">visit website here----</h3></b>
+<a href="https://www.aitpune.com/" target="_blank">
+    
+    <img src="https://image-static.collegedunia.com/images/profile/2023-12-22/1703248025_download_prev_ui.png" alt="" style="height: 200px;position: absolute;top: 40%;left: 22%;">
+</a>
+<p></p>
+</body>
+</html>

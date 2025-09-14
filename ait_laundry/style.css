@@ -1,0 +1,213 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0b40a; /* Vibrant hover color */
+}
+
+#hero {
+    background-image: url('path/to/hero-background.jpg'); /* Black Panther themed background */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f0f0f0;
+    position: relative;
+    overflow: hidden; /* For animations */
+}
+
+.hero-content {
+    z-index: 1;
+    opacity: 0; /* Initial state for animation */
+    transform: translateY(20px); /* Initial state for animation */
+    animation: fadeInSlideUp 1s forwards ease-out;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #e0b40a; /* Vibrant accent color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e0b40a; /* Vibrant accent color */
+    color: #1a1a1a;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f5d742; /* Lighter shade on hover */
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #e0b40a;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #e0b40a;
+    margin: 1rem auto 0;
+    animation: growLine 1s ease-out;
+}
+
+@keyframes growLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
+    }
+}
+
+.character-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.character-info img {
+    width: 300px; /* Adjust image size */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(224, 180, 10, 0.5); /* Glowing effect */
+}
+
+.timeline-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.timeline-item {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+}
+
+.timeline-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item li {
+    margin-bottom: 0.5rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(224, 180, 10, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+}

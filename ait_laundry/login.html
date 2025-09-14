@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundrify</title>
+    <link rel="stylesheet" href="laundry_complaint.html">
+    <style>
+      body {
+      background: #f9f9f9;
+    }
+    .form-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+        /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007bff;
+      padding: 10px 20px;
+      color: white;
+      position: relative;
+    }
+
+    /* Logo */
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Nav links */
+    .navbar .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Profile menu */
+    .profile-container {
+      position: relative;
+      margin-left: 30px;
+    }
+
+   
+
+    .profile-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 45px;
+      background-color: white;
+      color: #333;
+      min-width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+    }
+
+    .profile-dropdown ul {
+      list-style: none;
+      padding: 10px;
+    }
+
+    .profile-dropdown ul li {
+      padding: 8px 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .profile-dropdown ul li:last-child {
+      border-bottom: none;
+    }
+
+    .profile-dropdown ul li span {
+      font-weight: bold;
+    }
+
+    /* Show dropdown on active class */
+    .profile-container.active .profile-dropdown {
+      display: block;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .table-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      background: white;
+      table-layout: auto;
+      width: auto;
+      max-width: 90%;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    th {
+      background: #f0f0f0;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/001/428/620/non_2x/laundry-elements-and-clothes-banner-vector.jpg);">
+
+<nav class="navbar">
+        <div class="logo">LAUNDRIFY</div>
+
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="my_laundry.html">MY LAUNDRY</a>
+            <a href="contact us.html">CONTACT US</a>
+            <a href="laundry_complaint.html">COMPLAINT</a>
+            <a href="login.html">LOGIN</a>
+
+            <div class="profile-container" id="profileMenu">
+                <div class="profile-circle">A</div>
+                <div class="profile-dropdown">
+                    <ul>
+                        <li><span>Name:</span>Prashant Sinha</li>
+                        <li><span>Reg No:</span> 250012</li>
+                        <li><span>Room No:</span> 215F</li>
+                        <li><span>Flank:</span> F-Flank</li>
+                        <li><span>Contact Details:</span> 8459705541</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <div style=" height: 35px; width: 35px; position: absolute; left: 96.4%; top: 2.7%;  border-radius: 50%; background-image: url(https://img.freepik.com/premium-vector/profile-icon_1134231-1698.jpg) ; display: flex; object-fit: contain;"></div>
+
+    <img src="https://img.freepik.com/premium-vector/washing-machine-concept-isolated-flat-cartoon-style-vector_669839-245.jpg?w=1380" style="height: 550px; width: 600px; position: absolute; top: 25%; left: 35%; border-radius: 50px;">
+
+    <a href="my_laundry.html" style="text-decoration: none;"><button style="position: absolute; top: 68.4%; left: 54.7%; width: 98px; height: 37px; border-radius: 12px;">LOGIN</button></a>
+
+    <b><div style="font-size: 40px; position: absolute; top: 38.5%; left: 46.5%; font-family: cursive; ">Laundrify</div></b>
+
+    <div><input type="text" placeholder="username" style="width: 350px; height: 43px; background-color: transparent; font-size: 25px; position: absolute; top: 50%; left: 41.3%; border-radius: 10px; border-width: 4px; "></div>
+
+    <div ><input type="password" placeholder="password" style="width: 350px; height: 43px; background-color: transparent; font-size: 25px; position: absolute; top: 60%; left: 41.3%; border-radius: 10px; border-width: 4px;"></div>
+
+</body>
+</html>
